@@ -1,6 +1,7 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 
 h2 {
@@ -41,7 +42,10 @@ input[type=range] {
     width: 800px;
     margin: auto;
     border: solid black 3px;
+}
 
+.grid div {
+    border: solid rgba(0, 0, 0, 0.1) 1px;
 }
 
 .btn-con {
@@ -57,4 +61,13 @@ input[type=range] {
 
 .passive {
     color: white;
+}
+
+footer {
+
+    text-align: center;
+}
+
+.hide {
+    visibility: hidden;
 }

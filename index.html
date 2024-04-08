@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
-    <script src="script.js" ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <main>
     <h2>Etch-a-sketch</h2>
+    <div class="range_slider">
+         <label for="size">Choose the size
+        <input type="range" value="50" id="size_input" min="1" step="1"><div class="num"></div>
+    </label>
+    </div>
     <div class="btn-con">
-        <button type="button" id="clear">Click to clear it!</button>
-        <button type="button" id="new">Click to set the size!</button>
+        <button type="button" id="draw">Click to set the size and start painting!</button>
+        <button type="button" id="clear">Click to clear it!</button>      
         <!--<button type="button" id="rainbow">Click to paint in rainbow colors!</button>-->
     </div>
-    <label for="size">Choose the size
-    <input type="range" value="50" id="size" min="1" step="1">
-    </label>
-    <div class="grid" id="grid">
-
-</div>    
+  
+    <div class="grid" id="grid"></div>    
+</main>
+<footer>Boris Nielsen 2022</footer>
 </body>
 
 </html>
