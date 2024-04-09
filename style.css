@@ -4,6 +4,11 @@
     font-family: monospace;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
 h2 {
     text-align: center;
     font-size: 1.7rem;
@@ -74,8 +79,8 @@ footer {
 
 @media screen and (max-width: 480px) {
     .grid {
-        height: 400px;
-        width: 400px;
+        height: 380px;
+        width: 380px;
     }
     
 }
