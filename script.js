@@ -3,10 +3,7 @@ const clearBtn = document.getElementById("clear");
 const sizeInput = document.getElementById("size_input");
 const num = document.querySelector(".num");
 const rangeSlider = document.querySelector(".range_slider");
-const grid = document.getElementById("grid"); 
-
-
-
+const grid = document.getElementById("grid");
 
 function makeGrid(size) {
   for (let i = 0; i < size * size; i++) {
@@ -21,16 +18,16 @@ function makeGrid(size) {
 }
 
 const emptyGrid = () => {
-    grid.innerHTML = "";
-}
+  grid.innerHTML = "";
+};
 
 const removeSlider = () => {
   rangeSlider.classList.add("hide");
 };
 
 const showSize = () => {
-    num.textContent = sizeInput.value;
-}
+  num.textContent = sizeInput.value;
+};
 
 function clear() {
   const gridItems = document.querySelectorAll(".items");

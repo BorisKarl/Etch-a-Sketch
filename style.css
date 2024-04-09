@@ -17,7 +17,7 @@ button {
 }
 
 button:hover {
-    background-color: tomato;
+    background-color: lightgray;
 
 }
 
@@ -29,7 +29,7 @@ label {
     padding-bottom: 10px;
 }
 input[type=range] {
-    -webkit-appearance: none;
+    appearance: none;
     color: tomato;
     background-color: silver;
     width: 300px;
@@ -70,4 +70,12 @@ footer {
 
 .hide {
     visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+    .grid {
+        height: 400px;
+        width: 400px;
+    }
+    
 }
